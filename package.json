@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-duration",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "ISO 8601 duration MCP.",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-duration": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "duration"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-duration.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/duration",
   "pipeworx": {
-    "sourceHash": "v1-02efcc16127e3d4cc9da5e092ae08f65f4a83ec7115b0c1ee26795dd8fe891e1",
-    "sourceCommit": "76aa8f5d9b5dc2f665563030647c68e661478864"
+    "mode": "gateway",
+    "slug": "duration",
+    "gatewaySlug": "duration",
+    "sourceHash": "v1-372aa28e140901c7611f263682716884e568fca0c9529cfdd6f1fc3cbc4e3857",
+    "sourceCommit": "bb047243cf27f32453103de186b8e6a8b6a1ce79"
   }
 }
