@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-duration",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "ISO 8601 duration MCP.",
   "type": "module",
   "main": "lib/index.js",
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "duration",
     "gatewaySlug": "duration",
-    "sourceHash": "v1-372aa28e140901c7611f263682716884e568fca0c9529cfdd6f1fc3cbc4e3857",
-    "sourceCommit": "bb047243cf27f32453103de186b8e6a8b6a1ce79"
+    "sourceHash": "v1-47eacf15da54f099f9aa0bdbff13eb2d0dc1c9ab704d6e65e69b53644112955a",
+    "sourceCommit": "e707a4bb6209f432984c0a83bf64b3138130db89"
   }
 }
